@@ -1,0 +1,16 @@
+build/
+dist/
+mock/
+scripts/
+desktop/
+flow-typed/
+src/js/components/flexlayout/
+flow.js
+webpack.common.js
+webpack*.js
+.eslintrc.js
+karma.conf.js
+test/_coverage
+src/_coverage
+_coverage
+plugins

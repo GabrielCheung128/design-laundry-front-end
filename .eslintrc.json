@@ -1,0 +1,112 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "airbnb",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import",
+        "flowtype"
+    ],
+    "globals": {
+        "React$Element": true,
+        "React$Component": true,
+        "__DEV__": true,
+        "SyntheticInputEvent": true,
+        "SyntheticMouseEvent": true,
+        "SyntheticEvent": true,
+        "moment$Moment": true,
+        "describe": true,
+        "it": true,
+        "expect": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "jasmine": true,
+        "beforeAll": true,
+        "afterAll": true,
+        "xit": true,
+        "xdescribe": true,
+        "fit": true,
+        "fdescribe": true,
+        "spyOn": true,
+        "ReactClass": true
+    },
+    "env": {
+        "browser": true,
+        "amd": true,
+        "commonjs": true,
+        "jquery": true,
+        "es6": true
+    },
+    "rules": {
+        "indent": [1, 4, { "SwitchCase": 1 }],
+        "no-var": 0,
+        "func-names": 0,
+        "eol-last": "off",
+        "padded-blocks": "off",
+        "no-tabs":"off",
+        "space-in-parens": "off",
+        "wrap-iife": "off",
+        "space-before-blocks": 2,   
+        "space-before-function-paren": "off",
+        "no-trailing-spaces": [2, {"skipBlankLines": true }],
+        "keyword-spacing": 2,
+        "comma-dangle": "off",
+        "strict": [0, "global"],
+        "no-plusplus": "off",
+        "no-else-return": "off",
+        "import/no-extraneous-dependencies": "off", 
+        "import/no-duplicates": 1,
+        "no-duplicate-imports": 1,
+        "max-len": [2, 300, 4],
+
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "one-var": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "jsx-a11y/label-has-for": "off",  
+        "react/jsx-boolean-value": "off",
+        "react/prefer-stateless-function": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "react/no-unused-prop-types": 1,
+        "react/prop-types": 1,
+        "react/forbid-prop-types": "off",
+        "jsx-a11y/anchor-has-content": "off",
+
+
+        "jsx-a11y/href-no-hash": 1,
+        "no-useless-constructor": 1,
+        "react/no-string-refs": [2],
+        "react/sort-comp": 1,
+        "arrow-body-style": "off",
+        "no-unused-vars": 1, 
+        "arrow-parens": [1, "as-needed"],
+        "import/imports-first": "off",  
+        "prefer-const": 1, 
+        "object-shorthand": 1,
+        "no-multi-spaces": 1,
+        "no-underscore-dangle": 1,  
+        "no-param-reassign": ["error", { "props": false }],
+        "semi": 1,
+        "object-curly-spacing": 2, 
+        "no-multiple-empty-lines": 1,
+        "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+        "no-nested-ternary": "off", 
+        "no-unneeded-ternary": ["error", { "defaultAssignment": true }],
+        "no-continue": 1, 
+        "global-require": 1,
+        "class-methods-use-this": 1,
+        "prefer-rest-params": 1,
+        "react/no-find-dom-node": 1
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack.dev.config.js"
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "presets": [
+        "es2015",
+        "flow",
+        "stage-0",
+        "react"
+    ],
+    "env": {
+        "test": {
+            "plugins": [
+                "transform-decorators-legacy",
+                "syntax-flow",
+                "flow-react-proptypes",
+                "istanbul"
+            ]
+        },
+        "development": {
+            "plugins": [
+                "transform-decorators-legacy",
+                "syntax-flow",
+                "flow-react-proptypes",
+                "istanbul"
+            ]
+        },
+        "production": {
+            "plugins": [
+                "transform-decorators-legacy",
+                "syntax-flow",
+                "flow-react-proptypes"
+            ]
+        },
+        "demo": {
+            "plugins": [
+                "transform-decorators-legacy",
+                "syntax-flow",
+                "flow-react-proptypes"
+            ]
+        }
+    }
+}
